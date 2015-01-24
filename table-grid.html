@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>table-grid</title>
+<link href="css/quick-layout.css" rel="stylesheet" />
+<link href="css/main.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+</head>
+
+<body>
+<h1>居中对齐</h1>
+<div class="use-tips">
+	<h2>使用方法：▼</h2>
+	<ul>
+    	<li>1.table需要加上class="table-default table-grid"</li>
+        <li>
+            <textarea style="width:90%; height:100px;">
+                <table class="table-default table-grid">
+                    <thead>
+                      <tr>
+                        <th>物料</th>
+                        <th>资金</th>
+                        <th>来源</th>
+                        <th>报告人</th>
+                        <th>联系方式</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>有钱没钱</td>
+                            <td>回家过年</td>
+                            <td>我的天空</td>
+                            <td>NEO</td>
+                            <td>旅游喽</td>
+                        </tr>
+                        <tr>
+                            <td>有钱没钱</td>
+                            <td>回家过年</td>
+                            <td>我的天空</td>
+                            <td>NEO</td>
+                            <td>旅游喽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </textarea>
+        </li>
+    </ul>
+</div>
+<table class="table-default table-grid">
+	<thead>
+	  <tr>
+	    <th>物料</th>
+	    <th>资金</th>
+	    <th>来源</th>
+	    <th>报告人</th>
+	    <th>联系方式</th>
+	  </tr>
+	</thead>
+    <tbody>
+    	<tr>
+    		<td>有钱没钱</td>
+    		<td>回家过年</td>
+    		<td>我的天空</td>
+    		<td>NEO</td>
+    		<td>旅游喽</td>
+    	</tr>
+        <tr>
+    		<td>有钱没钱</td>
+    		<td>回家过年</td>
+    		<td>我的天空</td>
+    		<td>NEO</td>
+    		<td>旅游喽</td>
+    	</tr>
+    </tbody>
+</table>
+
+<h1>左对齐</h1>
+<div class="use-tips">
+	<h2>使用方法：▼</h2>
+	<ul>
+    	<li>1.table需要加上class="table-default table-grid table-grid-left"</li>
+        <li>
+            <textarea>
+                <table class="table-default table-grid table-grid-left">
+                    <thead>
+                      <tr>
+                        <th>物料</th>
+                        <th>资金</th>
+                        <th>来源</th>
+                        <th>报告人</th>
+                        <th>联系方式</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>有钱没钱</td>
+                            <td>回家过年</td>
+                            <td>我的天空</td>
+                            <td>NEO</td>
+                            <td>旅游喽</td>
+                        </tr>
+                        <tr>
+                            <td>有钱没钱</td>
+                            <td>回家过年</td>
+                            <td>我的天空</td>
+                            <td>NEO</td>
+                            <td>旅游喽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </textarea>
+        </li>
+    </ul>
+</div>
+<table class="table-default table-grid table-grid-left">
+	<thead>
+	  <tr>
+	    <th>物料</th>
+	    <th>资金</th>
+	    <th>来源</th>
+	    <th>报告人</th>
+	    <th>联系方式</th>
+	  </tr>
+	</thead>
+    <tbody>
+    	<tr>
+    		<td>有钱没钱</td>
+    		<td>回家过年</td>
+    		<td>我的天空</td>
+    		<td>NEO</td>
+    		<td>旅游喽</td>
+    	</tr>
+        <tr>
+    		<td>有钱没钱</td>
+    		<td>回家过年</td>
+    		<td>我的天空</td>
+    		<td>NEO</td>
+    		<td>旅游喽</td>
+    	</tr>
+    </tbody>
+</table>
+
+<h1>不带caption列表详情</h1>
+<div class="use-tips">
+	<h2>使用方法：▼</h2>
+	<ul>
+    	<li>1.table需要加上class="table-default table-grid table-detail"</li>
+        <li>2.col加上class="label"，奇数列td需内嵌label标签，加上class="label-field"</li>
+        <li>
+            <textarea>
+                <table class="table-default table-grid table-detail">
+                    <colgroup>
+                        <col class="label" />
+                        <col />
+                        <col class="label" />
+                        <col />
+                        <col class="label" />
+                        <col />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td><label class="label-field">有钱没钱</label></td>
+                            <td>回家过年</td>
+                            <td><label class="label-field">我的天空</label></td>
+                            <td>NEO</td>
+                            <td><label class="label-field">旅游喽</label></td>
+                            <td>旅游喽</td>
+                        </tr>
+                        <tr>
+                            <td>有钱没钱</td>
+                            <td>回家过年</td>
+                            <td>我的天空</td>
+                            <td>NEO</td>
+                            <td>旅游喽</td>
+                            <td>旅游喽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </textarea>
+        </li>
+    </ul>
+</div>
+<table class="table-default table-grid table-detail">
+	<colgroup>
+    	<col class="label" />
+    	<col />
+    	<col class="label" />
+    	<col />
+    	<col class="label" />
+        <col />
+    </colgroup>
+    <tbody>
+    	<tr>
+    		<td><label class="label-field">有钱没钱</label></td>
+    		<td>回家过年</td>
+    		<td><label class="label-field">我的天空</label></td>
+    		<td>NEO</td>
+    		<td><label class="label-field">旅游喽</label></td>
+            <td>旅游喽</td>
+    	</tr>
+        <tr>
+    		<td>有钱没钱</td>
+    		<td>回家过年</td>
+    		<td>我的天空</td>
+    		<td>NEO</td>
+    		<td>旅游喽</td>
+            <td>旅游喽</td>
+    	</tr>
+    </tbody>
+</table>
+
+<h1>带caption列表详情</h1>
+<div class="use-tips">
+	<h2>使用方法：▼</h2>
+	<ul>
+    	<li>1.table需要加上class="table-default table-grid table-detail"</li>
+        <li>2.增加caption标签，加上class="caption-title"</li>
+        <li>3.col加上class="label"，奇数列td需内嵌label标签，加上class="label-field"</li>
+        <li>4.如果有6个col，则tr中td要么写满6个，要么td设置colspan=""属性，空几个设置几</li>
+        <li>
+        	<textarea>
+                <table class="table-default table-grid table-detail">
+                    <caption class="caption-title">我的账单</caption>
+                    <colgroup>
+                        <col class="label" />
+                        <col />
+                        <col class="label" />
+                        <col />
+                        <col class="label" />
+                        <col />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td><label class="label-field">有钱没钱</label></td>
+                            <td>回家过年</td>
+                            <td><label class="label-field">我的天空</label></td>
+                            <td>NEO</td>
+                            <td><label class="label-field">旅游喽</label></td>
+                            <td>旅游喽</td>
+                        </tr>
+                        <tr>
+                            <td>有钱没钱</td>
+                            <td>回家过年</td>
+                            <td>我的天空</td>
+                            <td>NEO</td>
+                            <td colspan="2"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </textarea>	
+        </li>
+    </ul>
+</div>
+<table class="table-default table-grid table-detail">
+	<caption class="caption-title">我的账单</caption>
+	<colgroup>
+    	<col class="label" />
+    	<col />
+    	<col class="label" />
+    	<col />
+    	<col class="label" />
+        <col />
+    </colgroup>
+    <tbody>
+    	<tr>
+    		<td><label class="label-field">有钱没钱</label></td>
+    		<td>回家过年</td>
+    		<td><label class="label-field">我的天空</label></td>
+    		<td>NEO</td>
+    		<td><label class="label-field">旅游喽</label></td>
+            <td>旅游喽</td>
+    	</tr>
+        <tr>
+    		<td>有钱没钱</td>
+    		<td>回家过年</td>
+    		<td>我的天空</td>
+    		<td>NEO</td>
+    		<td colspan="2"></td>
+    	</tr>
+    </tbody>
+</table>
+<style>
+.use-tips{ line-height:32px; color:#F00;}
+.use-tips h2{ cursor:pointer;}
+.use-tips ul{ display:none;}
+</style>
+<script>
+//折叠列表
+$(function(){
+	var btn=$('.use-tips').find('h2');
+	btn.toggle(function(){
+		$(this).siblings().show();
+	},function(){
+		$(this).siblings().hide();
+	})
+})
+</script>
+</body>
+</html>

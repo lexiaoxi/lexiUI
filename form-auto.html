@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>自适应表单</title>
+<link href="css/quick-layout.css" rel="stylesheet" />
+<link href="css/main.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+</head>
+
+<body>
+<h1>seperate自适应表单</h1>
+<div class="use-tips">
+	<h2>使用方法：▼</h2>
+	<ul>
+    	<li>1.table需要加上class="table-default table-seperate" 和cellspacing="10px;"属性（兼容IE6、7）</li>
+        <li>2.奇数列的col需要加上class="label"，偶数行需要加上class="wp20"（wp20是百分比宽度 wp30就是30% 常用宽度已预设 特殊需求需要自己加上）</li>
+        <li>3.奇数列的td需要内嵌label标签，label需要加上class="label-field"，偶数列如果内嵌input，input需加上class="text-field"，如果不内嵌标签，则td可以直接包含文字</li>
+        <li>
+        	<textarea style="width:100%; height:200px;">
+                <table class="table-default table-seperate" cellspacing="10px;">
+                    <colgroup>
+                        <col class="label" />
+                        <col class="wp20" />
+                        <col class="label" />
+                        <col class="wp20" />
+                        <col class="label" />
+                        <col class="wp20" />
+                        <col class="label" />
+                        <col class="wp20" />
+                    </colgroup>
+                    <tr>
+                      <td><label class="label-field">账号：</label></td>
+                      <td><input type="text" class="text-field" /></td>
+                      <td><label class="label-field">密码：</label></td>
+                      <td><input type="text" class="text-field" /></td>
+                      <td><label class="label-field">密码：</label></td>
+                      <td><input type="text" class="text-field" /></td>
+                      <td><label class="label-field">密码：</label></td>
+                      <td><input type="text" class="text-field" /></td>
+                    </tr>
+                    <tr>
+                      <td><label class="label-field">2008</label></td>
+                      <td>快乐生活</td>
+                      <td><label class="label-field">夜空中</label></td>
+                      <td>最亮的星</td>
+                      <td><label class="label-field">密码：</label></td>
+                      <td><input type="text" class="text-field" /></td>
+                      <td><label class="label-field">提交：</label></td>
+                      <td><input type="submit" /></td>
+                    </tr>
+                </table>
+            </textarea>
+		</li>
+    </ul>
+</div>
+
+<form class="loginForm">
+<table class="table-default table-seperate" cellspacing="10px;">
+    <colgroup>
+        <col class="label" />
+        <col class="wp20" />
+        <col class="label" />
+        <col class="wp20" />
+        <col class="label" />
+        <col class="wp20" />
+        <col class="label" />
+        <col class="wp20" />
+    </colgroup>
+    <tr>
+      <td><label for="firstname" class="label-field">账号：</label></td>
+      <td><input type="text" id="firstname" name="firstname" class="text-field" /></td>
+      <td><label class="label-field">密码：</label></td>
+      <td><input type="text" class="text-field" /></td>
+      <td><label class="label-field">密码：</label></td>
+      <td><input type="text" class="text-field" /></td>
+      <td><label class="label-field">密码：</label></td>
+      <td><input type="text" class="text-field" /></td>
+    </tr>
+    <tr>
+      <td><label class="label-field">2008</label></td>
+      <td>快乐生活</td>
+      <td><label class="label-field">夜空中</label></td>
+      <td>最亮的星</td>
+      <td><label class="label-field">密码：</label></td>
+      <td><input type="text" class="text-field" /></td>
+      <td><label class="label-field">提交：</label></td>
+      <td><input type="submit" /></td>
+    </tr>
+</table>
+</form>
+<h1>collapse自适应表单</h1>
+<div class="use-tips">
+	<h2>使用方法：▼</h2>
+	<ul>
+    	<li>1.table需要加上class="table-default"</li>
+        <li>2.奇数列的col需要加上class="label"，偶数行需要加上class="wp20"（wp20是百分比宽度 wp30就是30% 常用宽度已预设 特殊需求需要自己加上）</li>
+        <li>3.奇数列的td需要内嵌label标签，label需要加上class="label-field"，偶数列如果内嵌input，input需加上class="text-field"，如果不内嵌标签，则td可以直接包含文字</li>
+        <li>
+        	<textarea style="width:100%; height:200px;">
+            	<table class="table-default">
+                    <colgroup>
+                        <col class="label" />
+                        <col class="wp20" />
+                        <col class="label" />
+                        <col class="wp20" />
+                        <col class="label" />
+                        <col class="wp20" />
+                    </colgroup>
+                    <tr>
+                      <td><label class="label-field">账号：</label></td>
+                      <td><input type="text" class="text-field" /></td>
+                      <td><label class="label-field">密码：</label></td>
+                      <td><input type="text" class="text-field" /></td>
+                      <td><label class="label-field">密码：</label></td>
+                      <td><input type="text" class="text-field" /></td>
+                    </tr>
+                    <tr>
+                      <td><label class="label-field">2008</label></td>
+                      <td>快乐生活</td>
+                      <td><label class="label-field">夜空中</label></td>
+                      <td>最亮的星</td>
+                      <td><label class="label-field">密码：</label></td>
+                      <td><input type="text" class="text-field" /></td>
+                    </tr>
+                </table>
+            </textarea>
+		</li>
+    </ul>
+</div>
+<table class="table-default">
+    <colgroup>
+        <col class="label" />
+        <col class="wp20" />
+        <col class="label" />
+        <col class="wp20" />
+        <col class="label" />
+        <col class="wp20" />
+    </colgroup>
+    <tr>
+      <td><label class="label-field">账号：</label></td>
+      <td><input type="text" class="text-field" /></td>
+      <td><label class="label-field">密码：</label></td>
+      <td><input type="text" class="text-field" /></td>
+      <td><label class="label-field">密码：</label></td>
+      <td><input type="text" class="text-field" /></td>
+    </tr>
+    <tr>
+      <td><label class="label-field">2008</label></td>
+      <td>快乐生活</td>
+      <td><label class="label-field">夜空中</label></td>
+      <td>最亮的星</td>
+      <td><label class="label-field">密码：</label></td>
+      <td><input type="text" class="text-field" /></td>
+    </tr>
+</table>
+
+<h1>colspan自适应表单</h1>
+<div class="use-tips">
+	<h2>使用方法：▼</h2>
+	<ul>
+    	<li>1.table需要加上class="table-default"</li>
+        <li>2.奇数列的col需要加上class="label"，偶数行需要加上class="wp20"（wp20是百分比宽度 wp30就是30% 常用宽度已预设 特殊需求需要自己加上）</li>
+        <li>3.奇数列的td需要内嵌label标签，label需要加上class="label-field"，偶数列如果内嵌input，input需加上class="text-field"，如果不内嵌标签，则td可以直接包含文字</li>
+        <li>4.如果内嵌的input是禁用的，还需加上class="disabled"，是只读的，加上class="readonly"</li>
+        <li>5.如果有6个col，则tr中td要么写满6个，要么td设置colspan=""属性，空几个设置几</li>
+        <li>
+        	<textarea style="width:100%; height:200px;">
+            	<table class="table-default">
+                    <colgroup>
+                        <col class="label" />
+                        <col class="wp20" />
+                        <col class="label" />
+                        <col class="wp20" />
+                        <col class="label" />
+                        <col class="wp20" />
+                    </colgroup>
+                    <tr>
+                      <td><label class="label-field">账号：</label></td>
+                      <td><input disabled type="text" class="text-field disabled" /></td>
+                      <td><label class="label-field">密码：</label></td>
+                      <td><input readonly type="text" class="text-field readonly" value="111111" /></td>
+                      <td><label class="label-field">密码：</label></td>
+                      <td><input type="text" class="text-field" /></td>
+                    </tr>
+                    <tr>
+                      <td><label class="label-field">2008</label></td>
+                      <td>快乐生活</td>
+                      <td><label class="label-field">夜空中</label></td>
+                      <td>最亮的星</td>
+                      <td colspan="2"></td>
+                    </tr>
+                </table>
+            </textarea>
+		</li>
+    </ul>
+</div>
+<table class="table-default">
+    <colgroup>
+        <col class="label" />
+        <col class="wp20" />
+        <col class="label" />
+        <col class="wp20" />
+        <col class="label" />
+        <col class="wp20" />
+    </colgroup>
+    <tr>
+      <td><label class="label-field">账号：</label></td>
+      <td><input disabled type="text" class="text-field disabled" /></td>
+      <td><label class="label-field">密码：</label></td>
+      <td><input readonly type="text" class="text-field readonly" value="111111" /></td>
+      <td><label class="label-field">密码：</label></td>
+      <td><input type="text" class="text-field" /></td>
+    </tr>
+    <tr>
+      <td><label class="label-field">2008</label></td>
+      <td>快乐生活</td>
+      <td><label class="label-field">夜空中</label></td>
+      <td>最亮的星</td>
+      <td colspan="2"></td>
+    </tr>
+</table>
+
+<h1>如果只有4列，偶数列col宽度可设为auto</h1>
+<div class="use-tips">
+	<h2>使用方法：▼</h2>
+    <ul>
+        <li>
+        	<textarea style="width:100%; height:200px;">
+            	<table class="table-default">
+                    <colgroup>
+                        <col class="label" />
+                        <col class="w_auto" />
+                        <col class="label" />
+                        <col class="w_auto" />
+                    </colgroup>
+                    <tr>
+                      <td><label class="label-field">账号：</label></td>
+                      <td><input type="text" class="text-field" /></td>
+                      <td><label class="label-field">密码：</label></td>
+                      <td><input type="text" class="text-field" /></td>
+                    </tr>
+                    <tr>
+                      <td><label class="label-field">2008</label></td>
+                      <td>快乐生活</td>
+                      <td><label class="label-field">夜空中</label></td>
+                      <td>最亮的星</td>
+                    </tr>
+                </table>
+            </textarea>
+		</li>
+    </ul>
+</div>
+<table class="table-default">
+    <colgroup>
+        <col class="label" />
+        <col class="w_auto" />
+        <col class="label" />
+        <col class="w_auto" />
+    </colgroup>
+    <tr>
+      <td><label class="label-field">账号：</label></td>
+      <td><input type="text" class="text-field" /></td>
+      <td><label class="label-field">密码：</label></td>
+      <td><input type="text" class="text-field" /></td>
+    </tr>
+    <tr>
+      <td><label class="label-field">2008</label></td>
+      <td>快乐生活</td>
+      <td><label class="label-field">夜空中</label></td>
+      <td>最亮的星</td>
+    </tr>
+</table>
+
+
+<style>
+.use-tips{ line-height:32px; color:#F00;}
+.use-tips h2{ cursor:pointer;}
+.use-tips ul{ display:none;}
+</style>
+<script>
+//折叠列表
+$(function(){
+	var btn=$('.use-tips').find('h2');
+	btn.toggle(function(){
+		$(this).siblings().show();
+	},function(){
+		$(this).siblings().hide();
+	})
+})
+//验证表单
+$(".loginForm").validate({
+	ignore: [],
+	rules: {
+		card:{
+			creditcard:true
+		
+		},
+		firstname: "required",
+		email: {
+			required: true,
+			email: true
+		},
+		password: {
+			required: true,
+			minlength: 5
+		},
+		confirm_password: {
+			required: true,
+			minlength: 5,
+			equalTo: "#password"
+		},
+		ck: { required: true },
+		comvalue: {
+			required: true
+		}
+	},
+	messages: {
+		firstname: "请输入姓名",
+		email: {
+			required: "请输入Email地址",
+			email: "请输入正确的email地址"
+		},
+		password: {
+			required: "请输入密码",
+			minlength: jQuery.format("密码不能小于{0}个字 符")
+		},
+		confirm_password: {
+			required: "请输入确认密码",
+			minlength: "确认密码不能小于5个字符",
+			equalTo: "两次输入密码不一致不一致"
+		},
+		ck: { required: "验证啊啊 啊啊啊啊" },
+		comvalue: {
+			required: "验证啊"
+		}
+
+	}
+});
+
+
+</script>
+<div class="time_send"><span><i></i></span><p>定时发送</p></div>
+<style>
+.time_send{ height:32px; margin:15px 0; line-height:32px; overflow:hidden;}
+.time_send p{ float:right; margin-right:18px; color:#999;}
+.time_send span{ float:right; width:50px; height:28px; background:#FFF; border:2px solid #DDD; border-radius:25px;}
+.time_send i{ display:block; width:28px; height:28px; border-radius:50%; box-shadow:1px 1px 2px #999, -1px -1px 2px #999; -webkit-transform:translateX(0); transform:translateX(0); -webkit-transition:transform .5s ease 0; transition:transform .5s ease 0;}
+</style>
+
+</body>
+</html>

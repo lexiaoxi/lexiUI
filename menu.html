@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>menuBar</title>
+<link href="css/quick-layout.css" rel="stylesheet" />
+<link href="css/main.css" rel="stylesheet" />
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+</head>
+
+<body>
+<div>
+    <div class="menuBar">
+    </div>
+</div>
+
+<script>
+$(function(){
+	$('.menuBar').menuBar
+		({
+			items:[
+					  {
+						  text : "js",
+						  url : "http://sale.suning.com/images/advertise/hg/muyingxnkl/index.html",
+						  menu: 
+						  {
+						  	list:
+							  [
+								{ text: "保存1",url:"www.google.com"},
+								{ text: "列存为1"},
+								{ text: "关闭1"}
+							  ]
+						  }
+					  },
+					  {
+						  text : "swift",
+						  url : "http://sale.suning.com/images/advertise/hg/muyingxnkl/index.html",
+						  menu: 
+						  {
+						  	list:
+							  [
+								{ text: "保存2"},
+								{ text: "列存为2"},
+								{ text: "关闭2"}
+							  ]
+						  }
+					  },
+					  {
+						  text : "php",
+						  url : "http://sale.suning.com/images/advertise/hg/muyingxnkl/index.html",
+						  menu: 
+						  {
+						  	list:
+							  [
+								{ text: "保存3"},
+								{ text: "列存为3"},
+								{ text: "关闭3"}
+							  ]
+						  }
+					  },
+					  {
+						  text : "c++",
+						  url : "http://sale.suning.com/images/advertise/hg/muyingxnkl/index.html"
+					  }
+				   ]
+		});
+});	
+</script>
+
+</body>
+</html>
