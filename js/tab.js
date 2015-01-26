@@ -1,4 +1,3 @@
-
 (function($){
 	$.fn.extend({
 		tab:function(options){
