@@ -28,7 +28,6 @@ a{outline:none;}
 .btn:hover, .btn:focus { text-decoration: none; background-image: linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.1)); }
 .btn:focus { /*outline: thin dotted;*/ outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
 .btn:active { box-shadow: 0 1px rgba(0,0,0,.2), inset 0 1px rgba(0,0,0,.05); outline: none; }
-
 .btn-navy { background-color: #001F3F; }
 .btn-blue { background-color: #0074D9; }
 .btn-aqua { background-color: #7FDBFF; }
@@ -46,12 +45,10 @@ a{outline:none;}
 .btn-gray { background-color: #AAA; }
 .btn-silver { background-color: #DDD; }
 .btn-black { background-color: #111; }
-
 .btn-white, .btn-silver { color: #111;  text-shadow: none; }
 
 
 /*
-
    SKINS
    • Backgrounds
    • Colors
