@@ -1,4 +1,3 @@
-
 (function($){
 	$.fn.menuBar=function(options){
 		var settings=$.extend({
