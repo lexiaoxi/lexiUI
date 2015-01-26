@@ -1,4 +1,4 @@
-
+/*自适应表单和数据列表*/
 table,td{border-collapse:collapse;}
 body{ padding:10px;}
 .table-default{ width:100%; border-collapse:collapse; table-layout:auto; border-right:1px solid #DDD;border-bottom:1px solid #DDD;}
@@ -15,7 +15,6 @@ input.text-field{*width:96%; *padding:3px 2%;}
 .error{ color:#F00;}
 .disabled,.readonly{ background:#E2E2E2; color:#666;}
 textarea:focus, input[type="text"]:focus{ border-color: rgba(82, 168, 236, 0.8); box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6); outline: 0 none;}
-
 .table-grid{ table-layout:auto;}
 .table-grid th{ padding:5px; border-left:1px solid #DDD;border-top:1px solid #DDD;}
 .table-grid td{ text-align:center; min-width:120px;}
