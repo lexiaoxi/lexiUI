@@ -10,16 +10,16 @@
 <body>
 <div>
     <ul class="tab fix">
-        <li><span>我的</span><i>×</i></li>
-        <li><span>你的</span><i>×</i></li>
-        <li><span>她的</span><i>×</i></li>
-        <li><span>大家的</span><i>×</i></li>
+        <li><span class="tab-word">我的</span><i class="tab-close">×</i></li>
+        <li><span class="tab-word">你的</span><i class="tab-close">×</i></li>
+        <li><span class="tab-word">她的</span><i class="tab-close">×</i></li>
+        <li><span class="tab-word">大家的</span><i class="tab-close">×</i></li>
     </ul>
 	<div>
-        <div>生活</div>
-        <div>工作</div>
-        <div>娱乐</div>
-        <div>未来</div>
+        <div class="tab-content">生活</div>
+        <div class="tab-content">工作</div>
+        <div class="tab-content">娱乐</div>
+        <div class="tab-content">未来</div>
     </div>
 </div>
 
@@ -27,8 +27,7 @@
 <script type="text/javascript" src="js/tab.js"></script>
 <script>
 $(function(){
-	$('.tab').tab({closeAll:false});
-	//$('.tabKey').tabG();
+	$('.tab').tab({closeAll:false,width:"300",height:"200"});
 });
 </script>
 </body>

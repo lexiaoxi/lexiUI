@@ -35,6 +35,8 @@ textarea:focus, input[type="text"]:focus{ border-color: rgba(82, 168, 236, 0.8);
 
 /*tab*/
 .tab li{ float:left; position:relative; line-height:24px;}
-.tab li span{ display:inline-block; margin:0 20px; cursor:pointer;}
-.tab li i{ display:none; position:absolute; right:5px; top:0; cursor:pointer;}
-.tab li.on{ background:#F00;}
+.tab-word{ display:inline-block; margin:0 15px; cursor:pointer;}
+.tab-close{ display:none; position:absolute; right:2px; top:-2px; font-style: normal; cursor:pointer;}
+.tab li.on{ background:#6BC300;}
+.tab li.on{ color: #FFF;}
+.tab-content{ box-shadow: 1px 1px 1px #EDEDED, -1px -1px 1px #EDEDED;}
